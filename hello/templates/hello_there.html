@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Olá, Django</title>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/site.css' %}"/>
+</head>
+<body>
+<span class="message"> Olá, {{ name }}!
+    Agora São {{ date | date:"l, d F, Y" }} e são {{ date | time:"H:i:s" }}.
+</span> 
+</body>
+</html>
